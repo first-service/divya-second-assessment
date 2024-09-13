@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HVAC Services</title>
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #003b4c;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between; 
+            padding: 0px 100px;
+        }
+
+        .header-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+    
+        .header-left h1 {
+            font-size: 28px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .service-icons {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-icons img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .service-icons div {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+        .header-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-right img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-area {
+            align-items: center;
+            justify-content: center;
+            padding: 50px 100px;
+        }
+
+        .service-area h2 {
+            color: #a73a31;
+            font-size: 40px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .service-content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .service-text {
+            max-width: 600px;
+        }
+
+        .service-text p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .links {
+            margin-top: 20px;
+            line-height: 25px;
+        }
+
+        .links a, a {
+            color: #a73a31;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+
+        .articles {
+            background-color: #f9f9f9;
+            padding: 50px 100px;
+        }
+
+        .articles h2 {
+            color: #a73a31;
+            font-size: 36px;
+        }
+
+        .article-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+    
+        .article {
+            background-color: white;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+
+@media screen and (max-width: 768px) {
+    .header{
+        display: block;
+    }
+
+    .service-content {
+        flex-direction: column; 
+    }
+    .service-icons {
+        display: contents;
+    }
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article {
+      width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-left h1 {
+        font-size: 21px;
+    }
+    .service-icons img {
+        width: 70px;
+       height: 70px;
+}
+    .service-area h2, .articles h2  {
+    color: #a73a31;
+    font-size: 21px;
+    }
+    .service-text p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+}
+@media screen and (max-width:500px) {
+    article {
+      width: 100%;
+    }
+    .header-left h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   .service-area h2 {
+    color: #a73a31;
+    font-size: 36px;
+    }
+    img {
+      width: 80%;
+   }
+}
+    </style>
+</head>
+<body>
+   
+    <div class="header">
+        <div class="header-column header-left">
+            <h1>HEATING AND AIR CONDITIONING SERVICES</h1>
+            <div class="service-icons">
+                <div>
+                    <img src="heating.png" alt="Heating">
+                    <p>HEATING</p>
+                </div>
+                <div>
+                    <img src="cooling.png" alt="Cooling">
+                    <p>COOLING</p>
+                </div>
+                <div>
+                    <img src="specials.png" alt="Specials">
+                    <p>SPECIALS</p>
+                </div>
+                <div>
+                    <img src="plumber-arlington-tx.png" alt="For Plumbing">
+                    <p>PLUMBING</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-column header-right">
+            <img src="sub_map.jpg" alt="Service Area Map">
+        </div>
+    </div>
+
+
+    <div class="service-area">
+        <h2>OUR SERVICE AREA</h2>
+        <div class="service-content">
+            <img src="our-service-area.jpg" alt="Service Area Image">
+            <div class="service-text">
+                <p>
+                    Minuteman Heating & Air serves Fort Worth, Arlington, Aleda, Alvarado, and the surrounding areas with first quality services you can rely upon. Our certified technicians have the experience necessary to ensure a professional repair, installation, and maintenance of your heating and air conditioning system.
+                </p>
+                <p>
+                    You are our first priority, and we are dedicated to your comfort and satisfaction. Contact us today to schedule your service, or a free estimate for a new HVAC system for residential or commercial applications.
+                </p>
+                <div class="links">
+                    <a href="#">Furnace Repair Service Areas</a><br>
+                    <a href="#">Air Conditioning Repair Service Areas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="articles">
+        <h2>Helpful Heating and Air Articles</h2>
+        <div class="article-container">
+            <div class="article">
+                <img src="The-Value-of-Design-and-Right-Sizing-by-Arlington-HVAC-Contractors.jpg" alt="Article 1">
+                <p>Before the not-so-cold winter arrived...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article">
+                <img src="Arlington-HVAC-Tips-for-Uneven-Heat.jpg" alt="Article 2">
+                <p>Uneven heat. It may be the No. 1 complaint...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article">
+                <img src="Arlington-HVAC-Tips-for-Troubleshooting-Furnaces.jpg" alt="Article 3">
+                <p>Fortunately for Arlington homeowners...</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
