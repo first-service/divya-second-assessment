@@ -12,17 +12,17 @@
         }
 
         .header {
-            background-color: #003b4c;
+            background-color: #314b57;
             color: white;
             padding: 20px 0;
             display: flex;
             justify-content: space-between; 
-            padding: 0px 100px;
+            padding: 0px 80px;
         }
 
         .header-column {
             flex: 1;
-            padding: 20px;
+            padding: 0px 20px;
         }
 
     
@@ -30,6 +30,7 @@
             font-size: 28px;
             text-align: left;
             margin-bottom: 20px;
+            font-family: Roboto Slab;
         }
 
         .service-icons {
@@ -52,21 +53,20 @@
         }
         .header-right {
             display: flex;
-            justify-content: center;
+            justify-content: right;
             align-items: center;
         }
-
         .header-right img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-        }
+    width: 100%;
+    max-width: 100%;
+    height: 274px;
+    margin-bottom: -5px;
+}
 
         .service-area {
             align-items: center;
             justify-content: center;
-            padding: 50px 100px;
+            padding: 0px 100px;
         }
 
         .service-area h2 {
@@ -74,6 +74,7 @@
             font-size: 40px;
             width: 100%;
             margin-bottom: 20px;
+            font-family: Roboto Slab;
         }
 
         .service-content {
@@ -97,6 +98,7 @@
         .service-text p {
             font-size: 20px;
             line-height: 1.6;
+            font-family: Helvetica, Arial;
         }
 
         .links {
@@ -104,8 +106,8 @@
             line-height: 25px;
         }
 
-        .links a, a {
-            color: #a73a31;
+        .links a {
+            color: #ab3c3c;
             font-weight: bold;
             text-decoration: none;
             margin-right: 15px;
@@ -118,24 +120,33 @@
         }
 
         .articles h2 {
-            color: #a73a31;
+            color: #ab3c3c;
             font-size: 36px;
         }
 
         .article-container {
             display: flex;
             justify-content: space-between;
-            gap: 30px;
+            gap: 17px;
             margin-top: 30px;
         }
-        
+        .article a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    align-items: flex-start;
+    display: flex;
+}
     
         .article {
-            background-color: white;
-            border: 1px solid #ccc;
             text-align: center;
             padding-bottom: 20px;
         }
+        .article p {
+    text-align: left;
+    line-height: 28px;
+    font-family: Helvetica, Arial;
+}
         
 
 @media screen and (max-width: 768px) {
@@ -158,10 +169,9 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width:992px) {
-    .article-container {
-        flex-direction: column;
-        align-items: center;
-    }
+    .articles {
+    padding: 50px 30px;
+}
     .header-left h1 {
         font-size: 21px;
     }
@@ -170,22 +180,25 @@
        height: 70px;
 }
     .service-area h2, .articles h2  {
-    color: #a73a31;
+        color: #ab3c3c;
     font-size: 21px;
     }
     .service-text p {
       font-size: 15px;
       line-height: 1.6;
     }
-   .header {      
+    .header {      
             padding: 0px;
         }
         .service-area {
             padding: 50px;
         }
-        .articles {
-            padding: 50px;
-        }
+        .article {
+          width: 28%;
+        } 
+        .article img {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width:500px) {
     article {
@@ -203,7 +216,7 @@
     img {
       width: 80%;
    }
-  .header {      
+   .header {      
             padding: 0px;
         }
         .service-area {
@@ -212,36 +225,50 @@
         .articles {
             padding: 50px;
         }
-}
+        .header-column {
+          padding: 20px 20px;
+       }
+   }
     </style>
 </head>
 <body>
-   
     <div class="header">
         <div class="header-column header-left">
             <h1>HEATING AND AIR CONDITIONING SERVICES</h1>
             <div class="service-icons">
                 <div>
-                    <img src="heating.png" alt="Heating">
-                    <p>HEATING</p>
+                    <a href="#"><img src="heating.png" alt="Service Area Image"></a>    
+                
+                    
+                    <a href="#" style="color:white; text-decoration: none; font-family: Helvetica, Arial;"> 
+                        <p>HEATING</p></a>
                 </div>
                 <div>
-                    <img src="cooling.png" alt="Cooling">
-                    <p>COOLING</p>
+                   
+                    <a href="#"> <img src="cooling.png" alt="Cooling"></a>
+                
+                    
+                    <a href="#" style="color:white; text-decoration: none; font-family: Helvetica, Arial;">
+                        <p>COOLING</p></a> 
+                </div>
+                <div> 
+                    <a href="#"><img src="specials.png" alt="Specials"></a>
+                
+                    <a href="#" style="color:white; text-decoration: none; font-family: Helvetica, Arial;">
+                        <p>SPECIALS</p></a> 
+                    
                 </div>
                 <div>
-                    <img src="specials.png" alt="Specials">
-                    <p>SPECIALS</p>
-                </div>
-                <div>
-                    <img src="plumber-arlington-tx.png" alt="For Plumbing">
-                    <p>PLUMBING</p>
+                    <a href="#">
+                    <img src="plumber-arlington-tx.png" alt="For Plumbing"></a>
+                    <a href="#" style="color:white; text-decoration: none; font-family: Helvetica, Arial;">
+                        <p>FOR PLUMBING</p></a> 
                 </div>
             </div>
         </div>
 
         <div class="header-column header-right">
-            <img src="sub_map.jpg" alt="Service Area Map">
+            <a href="#"> <img src="sub_map.jpg" alt="Service Area Map"></a>
         </div>
     </div>
 
@@ -252,11 +279,16 @@
             <img src="our-service-area.jpg" alt="Service Area Image">
             <div class="service-text">
                 <p>
-                    Minuteman Heating & Air serves Fort Worth, Arlington, Aleda, Alvarado, and the surrounding areas with first quality services you can rely upon. Our certified technicians have the experience necessary to ensure a professional repair, installation, and maintenance of your heating and air conditioning system.
+                    Minuteman Heating & Air serves Fort Worth, Arlington, Aleda, Alvarado, and the 
+                    surrounding areas with first quality services you can rely upon. Our certified 
+                    technicians have the experience necessary to ensure a professional repair, 
+                    installation, and maintenance of your <b>heating and air conditioning </b> system.
+                    You are our first priority, and we are dedicated to your comfort and satisfaction. 
+                    Contact us today to schedule your service, or a free estimate for a new <b>HVAC</b> system for residential 
+                    or commercial applications.
                 </p>
-                <p>
-                    You are our first priority, and we are dedicated to your comfort and satisfaction. Contact us today to schedule your service, or a free estimate for a new HVAC system for residential or commercial applications.
-                </p>
+                
+                    
                 <div class="links">
                     <a href="#">Furnace Repair Service Areas</a><br>
                     <a href="#">Air Conditioning Repair Service Areas</a>
@@ -268,20 +300,23 @@
     <div class="articles">
         <h2>Helpful Heating and Air Articles</h2>
         <div class="article-container">
-            <div class="article">
-                <img src="The-Value-of-Design-and-Right-Sizing-by-Arlington-HVAC-Contractors.jpg" alt="Article 1">
-                <p>Before the not-so-cold winter arrived...</p>
-                <a href="#">Read More</a>
+            <div class="article"><a href="#">
+                <img src="The-Value-of-Design-and-Right-Sizing-by-Arlington-HVAC-Contractors.jpg" alt="Article 1"></a>
+                <p>Before the not-so-cold winter arrived in Arlington this year, we were looking at the 
+                    importance of headting, ventilation, and air conditioning (HVAC) contractors. In this...</p>
+                <a href="#" style="color:#ab3c3c;">Read More</a>
             </div>
-            <div class="article">
-                <img src="Arlington-HVAC-Tips-for-Uneven-Heat.jpg" alt="Article 2">
-                <p>Uneven heat. It may be the No. 1 complaint...</p>
-                <a href="#">Read More</a>
+            <div class="article"><a href="#">
+                <img src="Arlington-HVAC-Tips-for-Uneven-Heat.jpg" alt="Article 2"></a>
+                <p>Uneven heat. It may be the No. 1 complaint among Arlington homeowners
+                    all winter, no matter how cold it is. Many people who have multi-level...</p>
+                <a href="#" style="color:#ab3c3c;">Read More</a>
             </div>
-            <div class="article">
-                <img src="Arlington-HVAC-Tips-for-Troubleshooting-Furnaces.jpg" alt="Article 3">
-                <p>Fortunately for Arlington homeowners...</p>
-                <a href="#">Read More</a>
+            <div class="article"><a href="#">
+                <img src="Arlington-HVAC-Tips-for-Troubleshooting-Furnaces.jpg" alt="Article 3"></a>
+                <p>Fortunately for Arlington homeowners,the winter of 2016 has been,
+                    for the most part, pretty darn warm(knock on wood). There's still some cold days...</p>
+                <a href="#" style="color:#ab3c3c;">Read More</a>
             </div>
         </div>
     </div>
