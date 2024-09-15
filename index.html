@@ -15,6 +15,7 @@
             flex: 1;
         }
 
+    
         .header-left h1 {
             font-size: 28px;
             text-align: left;
@@ -115,22 +116,22 @@
             margin-top: 30px;
         }
         .article a {
-       margin: 0;
-       padding: 0;
-      text-decoration: underline;
-      align-items: flex-start;
-      display: flex;
-   }
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    align-items: flex-start;
+    display: flex;
+}
     
         .article {
             text-align: center;
             padding-bottom: 20px;
         }
         .article p {
-       text-align: left;
-      line-height: 28px;
-      font-family: Helvetica, Arial;
-  }
+    text-align: left;
+    line-height: 28px;
+    font-family: Helvetica, Arial;
+}
         
 
 @media screen and (max-width: 768px) {
@@ -171,9 +172,6 @@
       font-size: 15px;
       line-height: 1.6;
     }
-    .header {      
-            padding: 0px;
-        }
         .service-area {
             padding: 50px;
         }
@@ -186,6 +184,19 @@
     .articles {
       padding: 50px !important;
        }
+       .header-container {
+         padding: 0 50px;
+      }
+      .header-right img {
+         width: 85%;
+         height: 226px;
+       margin-bottom: -4px;
+     }
+     .header-right {
+       display: flex;
+       justify-content: left;
+     }
+
 }
 @media screen and (max-width:500px) {
     article {
@@ -198,15 +209,10 @@
    }
    .service-area h2 {
     color: #a73a31;
-    font-size: 26px;
+    font-size: 36px;
     }
     img {
       width: 80%;
-    }
-   .service-content img {
-      width: 100%;
-      height: auto;
-      margin-top: 30px;
    }
    .header {      
             padding: 0px;
@@ -223,23 +229,24 @@
 
    }
    .container {
-        max-width: 1200px; 
-        margin: 0 auto;   
-        padding: 0 20px;  
+        max-width: 1200px; /* Set the max width you desire */
+        margin: 0 auto;    /* This centers the container horizontally */
+        padding: 0 20px;   /* This adds padding for small screens */
        }
 
 @media (max-width: 768px) {
     .container {
-        max-width: 100%;  
-        padding: 0 15px; 
+        max-width: 100%;  /* Allow full width on smaller devices */
+        padding: 0 15px;  /* Slightly reduce padding for smaller screens */
     }
 }
 
 .header-container {
-    background-color: #314b57;  
-    padding: 0;  
+    background-color: #314b57;   
     width: 100%; 
 }
+
+
 .header {
     max-width: 1200px; 
     margin: 0 auto;    
@@ -248,9 +255,11 @@
     color: white;
 }
 
+
 .header-column {
     flex: 1;
 }
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
